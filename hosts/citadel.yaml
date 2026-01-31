@@ -1,49 +1,72 @@
 host: citadel
 description: Desktop
 
-# Enabled modules
-enabled_modules: [
-  "base",
-  "dotfiles",
-  "cli-tools/cachyos-repo",
-  "cli-tools/chaotic-aur",
-  "cli-tools/webapp-tool",
-  "development",
-  "gaming",
-  "login-managers/dms-greeter",
-  "tailscale",
-  "hardware",
-]
+import: []
 
-# Host-specific packages
+enabled_modules:
+- cachyos-repo
+- base
+- dotfiles
+- development
+- gaming
+- tailscale
+- login-managers/ly-enable
+
 packages: []
-
-# Exclude packages from base or modules
 exclude: []
+additional_packages: []
 
-# Configuration backup settings
+flatpak_scope: user
+auto_prune: false
+module_processing: parallel
+strict_package_order: false
+
 config_backups:
   enabled: true
   max_backups: 3
 
-# System backup settings
 system_backups:
-  enabled: true           # Global toggle for system backups
-  backup_on_sync: true    # Create backup during dcli sync
-  backup_on_update: true  # Create backup during dcli update
-  tool: snapper           # Backup tool: timeshift or snapper
-  snapper_config: root    # Snapper config name (if using snapper)
-  max_backups: 3          # Keep last N backups (0 = unlimited)
+  enabled: true
+  backup_on_sync: true
+  backup_on_update: true
+  tool: snapper
+  snapper_config: root
+  max_backups: 3
 
-# Settings
-flatpak_scope: user
-auto_prune: false
-aur_helper: paru
+services:
+  enabled:
+  - NetworkManager
+  - NetworkManager-dispatcher
+  - NetworkManager-wait-online
+  - ananicy-cpp
+  - avahi-daemon
+  - bluetooth
+  - getty@
+  - greetd
+  - limine-snapper-sync
+  - ufw
+  disabled: []
+  scope: system
+
+enabled_service_profiles: []
+update_hooks:
+  pre_update: null
+  post_update: null
+  behavior: ask
+  devel: false
+  run_as_user: false
+
+default_apps:
+  scope: system
+  browser: brave-browser
+  text_editor: nvim
+  file_manager: org.gnome.Nautilus
+  terminal: ghostty
+  video_player: null
+  audio_player: null
+  image_viewer: brave-browser
+  pdf_viewer: brave-browser
+  mime_types: {}
+
 editor: nvim
-
-# Module processing mode
-# parallel: Collect and install all modules at once (faster, default)
-# sequential: Process modules one-by-one in enabled_modules order (more control)
-module_processing: parallel
-
-
+aur_helper: paru

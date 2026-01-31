@@ -5,6 +5,11 @@ local packages = {
 	"git",
 	"btop",
 	"flatpak",
+	"fzf",
+	"zoxide",
+	"starship",
+	"localsend",
+	"xorg-xmodmap",
 }
 
 return {

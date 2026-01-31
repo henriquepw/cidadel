@@ -5,6 +5,7 @@ local packages = {
 	"mangohud",
 	"protonplus",
 	"sunshine",
+	"discord",
 }
 
 return {

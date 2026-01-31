@@ -1,0 +1,13 @@
+last_updated: 2026-01-31T21:29:37.364649960Z
+enabled_services:
+- NetworkManager
+- NetworkManager-dispatcher
+- NetworkManager-wait-online
+- ananicy-cpp
+- avahi-daemon
+- bluetooth
+- getty@
+- greetd
+- limine-snapper-sync
+- ufw
+disabled_services: []
