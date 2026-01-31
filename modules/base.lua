@@ -1,16 +1,13 @@
 local packages = {
-    "base",
-    "base-devel",
-    "linux-firmware",
-    "networkmanager",
-    "vim",
-    "git",
-    "htop",
-    "man-db",
-    "man-pages",
+	"stow",
+	"networkmanager",
+	"vim",
+	"git",
+	"btop",
+	"flatpak",
 }
 
 return {
-    description = "Base packages for all machines",
-    packages = packages,
+	description = "Base packages for all machines",
+	packages = packages,
 }
