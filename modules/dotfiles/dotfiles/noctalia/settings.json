@@ -65,7 +65,38 @@
                     "usePrimaryColor": false
                 },
                 {
-                    "compactMode": false,
+                    "defaultSettings": {
+                        "autoStartBreaks": false,
+                        "autoStartWork": false,
+                        "compactMode": false,
+                        "longBreakDuration": 15,
+                        "sessionsBeforeLongBreak": 4,
+                        "shortBreakDuration": 5,
+                        "workDuration": 25
+                    },
+                    "id": "plugin:pomodoro"
+                },
+                {
+                    "defaultSettings": {
+                        "completedCount": 0,
+                        "count": 0,
+                        "current_page_id": 0,
+                        "isExpanded": false,
+                        "pages": [
+                            {
+                                "id": 0,
+                                "name": "General"
+                            }
+                        ],
+                        "showBackground": true,
+                        "showCompleted": true,
+                        "todos": [
+                        ]
+                    },
+                    "id": "plugin:todo"
+                },
+                {
+                    "compactMode": true,
                     "compactShowAlbumArt": true,
                     "compactShowVisualizer": false,
                     "hideMode": "hidden",
@@ -74,13 +105,13 @@
                     "maxWidth": 145,
                     "panelShowAlbumArt": true,
                     "panelShowVisualizer": true,
-                    "scrollingMode": "hover",
+                    "scrollingMode": "never",
                     "showAlbumArt": true,
                     "showArtistFirst": true,
                     "showProgressRing": true,
                     "showVisualizer": false,
                     "useFixedWidth": false,
-                    "visualizerType": "linear"
+                    "visualizerType": "wave"
                 }
             ],
             "left": [
@@ -104,16 +135,26 @@
                     "unfocusedIconsOpacity": 1
                 },
                 {
-                    "colorizeIcons": false,
+                    "colorizeIcons": true,
                     "hideMode": "hidden",
                     "id": "ActiveWindow",
                     "maxWidth": 145,
-                    "scrollingMode": "hover",
-                    "showIcon": true,
+                    "scrollingMode": "never",
+                    "showIcon": false,
                     "useFixedWidth": false
                 }
             ],
             "right": [
+                {
+                    "blacklist": [
+                    ],
+                    "colorizeIcons": false,
+                    "drawerEnabled": true,
+                    "hidePassive": false,
+                    "id": "Tray",
+                    "pinned": [
+                    ]
+                },
                 {
                     "compactMode": false,
                     "diskPath": "/",
@@ -131,31 +172,17 @@
                     "usePrimaryColor": false
                 },
                 {
-                    "blacklist": [
-                    ],
-                    "colorizeIcons": false,
-                    "drawerEnabled": true,
-                    "hidePassive": false,
-                    "id": "Tray",
-                    "pinned": [
-                    ]
-                },
-                {
-                    "hideWhenZero": false,
-                    "hideWhenZeroUnread": false,
-                    "id": "NotificationHistory",
-                    "showUnreadBadge": true,
-                    "unreadBadgeColor": "primary"
-                },
-                {
-                    "deviceNativePath": "",
-                    "displayMode": "onhover",
-                    "hideIfIdle": false,
-                    "hideIfNotDetected": true,
-                    "id": "Battery",
-                    "showNoctaliaPerformance": false,
-                    "showPowerProfiles": false,
-                    "warningThreshold": 30
+                    "defaultSettings": {
+                        "compactMode": false,
+                        "defaultPeerAction": "copy-ip",
+                        "hideDisconnected": false,
+                        "pingCount": 5,
+                        "refreshInterval": 5000,
+                        "showIpAddress": true,
+                        "showPeerCount": true,
+                        "terminalCommand": ""
+                    },
+                    "id": "plugin:tailscale"
                 },
                 {
                     "displayMode": "onhover",
@@ -163,24 +190,18 @@
                     "middleClickCommand": "pwvucontrol || pavucontrol"
                 },
                 {
-                    "displayMode": "onhover",
-                    "id": "Brightness"
-                },
-                {
-                    "colorizeDistroLogo": false,
-                    "colorizeSystemIcon": "none",
-                    "customIconPath": "",
-                    "enableColorization": false,
-                    "icon": "noctalia",
-                    "id": "ControlCenter",
-                    "useDistroLogo": false
+                    "hideWhenZero": false,
+                    "hideWhenZeroUnread": false,
+                    "id": "NotificationHistory",
+                    "showUnreadBadge": true,
+                    "unreadBadgeColor": "primary"
                 }
             ]
         }
     },
     "brightness": {
         "brightnessStep": 5,
-        "enableDdcSupport": false,
+        "enableDdcSupport": true,
         "enforceMinimum": true
     },
     "calendar": {
@@ -194,7 +215,7 @@
                 "id": "calendar-month-card"
             },
             {
-                "enabled": true,
+                "enabled": false,
                 "id": "weather-card"
             }
         ]
@@ -334,11 +355,11 @@
         "wallpaperChange": ""
     },
     "location": {
-        "analogClockInCalendar": false,
+        "analogClockInCalendar": true,
         "firstDayOfWeek": -1,
-        "hideWeatherCityName": false,
+        "hideWeatherCityName": true,
         "hideWeatherTimezone": false,
-        "name": "Tokyo",
+        "name": "campina grande",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": false,
