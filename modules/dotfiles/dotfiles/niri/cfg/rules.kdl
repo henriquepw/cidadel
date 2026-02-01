@@ -34,7 +34,6 @@ window-rule {
     match app-id="brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default" // Whatsapp Webapp
     open-on-workspace "chat"
     default-column-width { proportion 0.5; }
-
 }
 
 window-rule {
