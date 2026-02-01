@@ -8,6 +8,13 @@
   "current_page_id": 0,
   "todos": [
     {
+      "id": 1769982494792,
+      "text": "config tailscale",
+      "completed": false,
+      "createdAt": "2026-02-01T21:48:14.792Z",
+      "pageId": 0
+    },
+    {
       "id": 1769965466171,
       "text": "adicionar função de qlat no launcher (fazer ou achar um plugin pronto)",
       "completed": false,
@@ -36,7 +43,7 @@
       "pageId": 0
     }
   ],
-  "count": 4,
+  "count": 5,
   "completedCount": 0,
   "isExpanded": false,
   "showCompleted": true,

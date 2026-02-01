@@ -9,6 +9,9 @@ spawn-at-startup "brave"
 spawn-at-startup "discord"
 spawn-at-startup "steam"
 
-spawn-at-startup "brave-cinhimbnkkaeohfgghhklpknlkffjgod-Default" // Youtube Music
-spawn-at-startup "brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default" // Whatsapp Webapp
+// Youtube Music
+spawn-sh-at-startup "sleep 2 && /opt/brave-bin/brave --app-id=cinhimbnkkaeohfgghhklpknlkffjgod"
+
+// Whatsapp Webapp
+spawn-sh-at-startup "sleep 3 && /opt/brave-bin/brave --app-id=hnpfjngllnobngcgfapefoaidbinmjnm"
 

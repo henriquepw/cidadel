@@ -60,13 +60,13 @@ binds {
     Mod+CTRL+WheelScrollLeft            { move-column-left; }
 
     Mod+Q                               { focus-workspace "dev"; }
-    Mod+W                               { focus-workspace "browser"; }
+    Mod+W                               { focus-workspace "web"; }
     Mod+E                               { focus-workspace "chat"; }
     Mod+R                               { focus-workspace "gaming"; }
     Mod+T                               { focus-workspace 5; }
 
     Mod+CTRL+Q                          { move-column-to-workspace "dev"; }
-    Mod+CTRL+W                          { move-column-to-workspace "browser"; }
+    Mod+CTRL+W                          { move-column-to-workspace "web"; }
     Mod+CTRL+E                          { move-column-to-workspace "chat"; }
     Mod+CTRL+R                          { move-column-to-workspace "gaming"; }
     Mod+CTRL+T                          { move-column-to-workspace 5; }

@@ -1,6 +1,6 @@
 workspace "scratch"
 workspace "dev"
-workspace "browser"
+workspace "web"
 workspace "chat"
 workspace "gaming"
 
