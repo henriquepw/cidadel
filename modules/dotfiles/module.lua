@@ -24,5 +24,4 @@ return {
 	dotfiles_sync = true,
 	dotfiles = dotfiles,
 	packages = packages,
-	post_install_hook = "scripts/install_ns.sh",
 }

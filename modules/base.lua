@@ -1,5 +1,6 @@
 local packages = {
 	"stow",
+	"paru",
 	"networkmanager",
 	"vim",
 	"git",
@@ -9,6 +10,7 @@ local packages = {
 	"zoxide",
 	"starship",
 	"localsend",
+	"wl-clipboard",
 }
 
 return {

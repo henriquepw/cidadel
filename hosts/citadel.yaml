@@ -5,12 +5,13 @@ import: []
 
 enabled_modules:
 - cachyos-repo
+- system-packages-citadel
 - base
 - dotfiles
 - development
 - gaming
 - tailscale
-- login-managers/ly-enable
+- login-managers/sddm-astronaut
 
 packages: []
 exclude: []

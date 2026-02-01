@@ -16,7 +16,9 @@ local packages = {
 	"zig",
 	"lazygit",
 	"lazydocker",
+	"ghostty",
 	"zsh",
+	"neovim",
 }
 
 return {

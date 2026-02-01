@@ -1,5 +1,3 @@
-source /usr/share/cachyos-zsh-config/cachyos-config.zsh
-
 # Path
 export PATH=$PATH:$HOME/bin:$HOME/.local/bin
 

@@ -1,22 +1,19 @@
 {
-  "timestamp": "2026-01-31T19:05:37.453279650+00:00",
-  "timestamp_display": "2026-01-31 19:05",
+  "timestamp": "2026-02-01T20:35:03.570306655+00:00",
+  "timestamp_display": "2026-02-01 20:35",
   "hostname": "citadel",
   "active_host_file": "citadel.yaml",
   "enabled_modules": [
+    "cachyos-repo",
     "base",
     "dotfiles",
-    "cli-tools/cachyos-repo",
-    "cli-tools/chaotic-aur",
-    "cli-tools/webapp-tool",
     "development",
     "gaming",
-    "login-managers/dms-greeter",
     "tailscale",
-    "hardware"
+    "login-managers/sddm-astronaut-enable"
   ],
   "backup_type": "auto-sync",
   "dcli_version": "0.2.0",
-  "package_count": 42,
+  "package_count": 37,
   "validation_passed": true
 }
