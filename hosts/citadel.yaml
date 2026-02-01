@@ -61,7 +61,7 @@ default_apps:
   browser: brave-browser
   text_editor: nvim
   file_manager: org.gnome.Nautilus
-  terminal: ghostty
+  terminal: com.mitchellh.ghostty
   video_player: null
   audio_player: null
   image_viewer: brave-browser
