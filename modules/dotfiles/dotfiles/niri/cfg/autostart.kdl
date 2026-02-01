@@ -4,3 +4,11 @@
 spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
 spawn-at-startup "qs" "-c" "noctalia-shell"
 
+spawn-at-startup "ghostty"
+spawn-at-startup "brave"
+spawn-at-startup "discord"
+spawn-at-startup "steam"
+
+spawn-at-startup "brave-cinhimbnkkaeohfgghhklpknlkffjgod-Default" // Youtube Music
+spawn-at-startup "brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default" // Whatsapp Webapp
+

@@ -9,7 +9,6 @@ local packages = {
 	"zoxide",
 	"starship",
 	"localsend",
-	"xorg-xmodmap",
 }
 
 return {

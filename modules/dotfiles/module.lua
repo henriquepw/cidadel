@@ -5,6 +5,7 @@ local packages = {
 }
 
 local dotfiles = {}
+
 local cmd = [[ls -pa ~/.config/arch-config/modules/dotfiles/home | grep -v /]]
 local dir = io.popen(cmd)
 if dir then
@@ -23,4 +24,5 @@ return {
 	dotfiles_sync = true,
 	dotfiles = dotfiles,
 	packages = packages,
+	post_install_hook = "scripts/install_ns.sh",
 }

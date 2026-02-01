@@ -15,13 +15,6 @@
       "pageId": 0
     },
     {
-      "id": 1769964606238,
-      "text": "picture-in-picture default to floating on bottom right",
-      "completed": false,
-      "createdAt": "2026-02-01T16:50:06.238Z",
-      "pageId": 0
-    },
-    {
       "id": 1769964558977,
       "text": "super+c/v = universal copy/paste",
       "completed": false,
@@ -50,13 +43,6 @@
       "pageId": 0
     },
     {
-      "id": 1769964420472,
-      "text": "Sempre abrir o terminal com tmux",
-      "completed": false,
-      "createdAt": "2026-02-01T16:47:00.472Z",
-      "pageId": 0
-    },
-    {
       "id": 1769964396825,
       "text": "Customize Greeter",
       "completed": false,
@@ -69,10 +55,45 @@
       "completed": false,
       "createdAt": "2026-02-01T16:46:29.049Z",
       "pageId": 0
+    },
+    {
+      "id": 1769966363877,
+      "text": "botar zsh como default",
+      "completed": true,
+      "createdAt": "2026-02-01T17:19:23.877Z",
+      "pageId": 0
+    },
+    {
+      "id": 1769966373102,
+      "text": "corrigir tmux config",
+      "completed": true,
+      "createdAt": "2026-02-01T17:19:33.102Z",
+      "pageId": 0
+    },
+    {
+      "id": 1769966565164,
+      "text": "configurar starship",
+      "completed": true,
+      "createdAt": "2026-02-01T17:22:45.164Z",
+      "pageId": 0
+    },
+    {
+      "id": 1769964606238,
+      "text": "picture-in-picture default to floating on bottom right",
+      "completed": true,
+      "createdAt": "2026-02-01T16:50:06.238Z",
+      "pageId": 0
+    },
+    {
+      "id": 1769964420472,
+      "text": "Sempre abrir o terminal com tmux",
+      "completed": true,
+      "createdAt": "2026-02-01T16:47:00.472Z",
+      "pageId": 0
     }
   ],
-  "count": 9,
-  "completedCount": 0,
+  "count": 12,
+  "completedCount": 5,
   "isExpanded": false,
   "showCompleted": true,
   "showBackground": true

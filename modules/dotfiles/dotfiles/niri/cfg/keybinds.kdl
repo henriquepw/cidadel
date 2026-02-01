@@ -1,5 +1,5 @@
-binds {
 
+binds {
     // ────────────── Keybindings ──────────────
     // https://github.com/YaLTeR/niri/wiki/Configuration:-Key-Bindings
 
@@ -12,24 +12,27 @@ binds {
     Mod+ESCAPE                          allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
     Mod+Shift+ESCAPE                    { show-hotkey-overlay; }
-    ALT+Delete                          { quit; } // Also quits Niri
+    ALT+Delete                          { quit; }
     Mod+Shift+P                         { power-off-monitors; }
     Mod+Return                          hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
     Mod+Backspace                       hotkey-overlay-title="Session Menu: noctalia sessionMenu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
 
+
     // ─── Applications ───
-    Mod+Shift+T                         hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
-    Mod+Shift+B                         hotkey-overlay-title="Open Browser" { spawn "brave"; }
-    Mod+Shift+E                         hotkey-overlay-title="Open File Manager" { spawn "nautilus"; }
-    Mod+Shift+S                         hotkey-overlay-title="Open Steam" { spawn "steam"; }
-    Mod+Shift+D                         hotkey-overlay-title="Open Discord" { spawn "discord"; }
-    Mod+Shift+G                         hotkey-overlay-title="Open Whatsapp" { spawn "Whatsapp"; }
+    Mod+Shift+T                         hotkey-overlay-title="Open: Terminal" { spawn "ghostty"; }
+    Mod+Shift+B                         hotkey-overlay-title="Open: Browser" { spawn "brave"; }
+    Mod+Shift+E                         hotkey-overlay-title="Open: File Manager" { spawn "nautilus"; }
+    Mod+Shift+D                         hotkey-overlay-title="Open: Discord" { spawn "discord"; }
+    Mod+Shift+M                         hotkey-overlay-title="Toggle View: Music" { spawn-sh "ns.py -id brave-cinhimbnkkaeohfgghhklpknlkffjgod-Default"; }
+    Mod+Shift+N                         hotkey-overlay-title="Toogle View: PiP" { spawn-sh "ns.py -t 'Picture in picture' -nf"; }
+
 
     // ─── Audio Controls ───
     XF86AudioRaiseVolume                allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume increase"; }
     XF86AudioLowerVolume                allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume decrease"; }
     XF86AudioMute                       allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume muteOutput"; }
     XF86AudioMicMute                    allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume muteInput"; }
+
 
     // ─── Window Movement and Focus ───
     Mod+Shift+Q                         { close-window; }
@@ -56,37 +59,33 @@ binds {
     Mod+CTRL+WheelScrollRight           { move-column-right; }
     Mod+CTRL+WheelScrollLeft            { move-column-left; }
 
-    Mod+Q                               { focus-workspace 1; }
-    Mod+W                               { focus-workspace 2; }
-    Mod+E                               { focus-workspace 3; }
-    Mod+R                               { focus-workspace 4; }
+    Mod+Q                               { focus-workspace "dev"; }
+    Mod+W                               { focus-workspace "browser"; }
+    Mod+E                               { focus-workspace "chat"; }
+    Mod+R                               { focus-workspace "gaming"; }
     Mod+T                               { focus-workspace 5; }
-    Mod+Y                               { focus-workspace 6; }
 
-    Mod+CTRL+Q                          { move-column-to-workspace 1; }
-    Mod+CTRL+W                          { move-column-to-workspace 2; }
-    Mod+CTRL+E                          { move-column-to-workspace 3; }
-    Mod+CTRL+R                          { move-column-to-workspace 4; }
+    Mod+CTRL+Q                          { move-column-to-workspace "dev"; }
+    Mod+CTRL+W                          { move-column-to-workspace "browser"; }
+    Mod+CTRL+E                          { move-column-to-workspace "chat"; }
+    Mod+CTRL+R                          { move-column-to-workspace "gaming"; }
     Mod+CTRL+T                          { move-column-to-workspace 5; }
-    Mod+CTRL+Y                          { move-column-to-workspace 6; }
 
     Mod+TAB                             { focus-workspace-previous; }
 
-    // ─── Layout Controls ───
-    Mod+CTRL+F                          { spawn "~/.config/niri/scripts/toggle-width.sh"; }
-    Mod+CTRL+G                          { set-window-height "100%"; }
-    Mod+CTRL+Shift+H                    { set-column-width "-10%"; }
-    Mod+CTRL+Shift+J                    { set-window-height "+10%"; }
-    Mod+CTRL+Shift+K                    { set-window-height "-10%"; }
-    Mod+CTRL+Shift+L                    { set-column-width "+10%"; }
 
-    // ─── Modes ───
-    Mod+F                               { toggle-window-floating; }
+    // ─── Layout Controls ───
+    Mod+CTRL+F                          { switch-preset-column-width; }
+    Mod+CTRL+H                          { set-column-width "50%"; }
+    Mod+CTRL+J                          { set-column-width "75%"; }
+    Mod+CTRL+K                          { set-column-width "100%"; }
+
     Mod+M                               { fullscreen-window; }
     Mod+O                               repeat=false { toggle-overview; }
 
+
     // ─── Screenshots ───
-    CTRL+Shift+1                        { screenshot; }
-    CTRL+Shift+2                        { screenshot-screen; }
-    CTRL+Shift+3                        { screenshot-window; }
+    Mod+CTRL+Shift+1                        { screenshot; }
+    Mod+CTRL+Shift+2                        { screenshot-screen; }
+    Mod+CTRL+Shift+3                        { screenshot-window; }
 }

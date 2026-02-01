@@ -1,5 +1,70 @@
+workspace "scratch"
+workspace "dev"
+workspace "browser"
+workspace "chat"
+workspace "gaming"
+
 window-rule {
   geometry-corner-radius 4
   clip-to-geometry true
 }
 
+window-rule {
+    match app-id="com.mitchellh.ghostty"
+    open-on-workspace "dev"
+    default-column-width { proportion 0.75; }
+}
+
+window-rule {
+    match app-id="steam"
+    open-on-workspace "gaming"
+    default-column-width { proportion 0.75; }
+}
+
+window-rule {
+    match app-id="brave-cinhimbnkkaeohfgghhklpknlkffjgod-Default" // Youtube Music Webapp
+    open-on-workspace "scratch"
+    open-floating true
+    default-column-width { proportion 0.5; }
+    default-window-height { proportion 0.5; }
+}
+
+window-rule {
+    match app-id="discord"
+    match app-id="brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default" // Whatsapp Webapp
+    open-on-workspace "chat"
+    default-column-width { proportion 0.5; }
+
+}
+
+window-rule {
+  match title="Picture in picture"
+  open-floating true
+  open-focused false
+  default-floating-position x=8 y=8 relative-to="bottom-right"
+  default-column-width { fixed 500; }
+  default-window-height { fixed 281; }
+}
+
+// Indicate screencasted windows with red colors.
+window-rule {
+    match is-window-cast-target=true
+
+    focus-ring {
+        active-color "#f38ba8"
+        inactive-color "#7d0d2d"
+    }
+
+    border {
+        inactive-color "#7d0d2d"
+    }
+
+    shadow {
+        color "#7d0d2d70"
+    }
+
+    tab-indicator {
+        active-color "#f38ba8"
+        inactive-color "#7d0d2d"
+    }
+}
