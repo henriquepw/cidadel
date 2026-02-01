@@ -1,0 +1,10 @@
+last_updated: 2026-02-01T13:28:33.820538511Z
+scope: system
+apps:
+  image_viewer: brave-browser
+  terminal: com.mitchellh.ghostty
+  pdf_viewer: brave-browser
+  browser: brave-browser
+  text_editor: nvim
+  file_manager: org.gnome.Nautilus
+custom_mime_types: {}
