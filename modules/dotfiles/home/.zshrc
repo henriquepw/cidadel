@@ -7,13 +7,12 @@ export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # fzf
-export PATH=$PATH:$HOME/.fzf/bin
 [[ ! -f ~/.fzf.zsh ]] || source ~/.fzf.zsh
 
 # Aliases
+alias cat="bat"
 alias gf="sh ~/dotfiles/scripts/git-fetch.sh"
-alias update="sh ~/dotfiles/scripts/update-all.sh"
-alias gz="lazygit"
+alias update="dcli update"
 alias c="clear"
 alias vim="nvim"
 alias ls="ls --color -a"
@@ -60,9 +59,8 @@ eval "$(zoxide init --cmd cd zsh)"
 eval "$(starship init zsh)"
 
 # bun completions
-[ -s "/home/henrique/.bun/_bun" ] && source "/home/henrique/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 
 if (( ! ${+TMUX} )); then
   tmux new-session -A -s main
