@@ -4,8 +4,8 @@
 spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
 spawn-at-startup "qs" "-c" "noctalia-shell"
 
-spawn-at-startup "ghostty"
 spawn-at-startup "brave"
+spawn-at-startup "ghostty"
 spawn-at-startup "discord"
 spawn-at-startup "steam"
 
@@ -13,5 +13,7 @@ spawn-at-startup "steam"
 spawn-sh-at-startup "sleep 1 && /opt/brave-bin/brave --app-id=cinhimbnkkaeohfgghhklpknlkffjgod"
 
 // Whatsapp Webapp
-spawn-sh-at-startup "sleep 2 && /opt/brave-bin/brave --app-id=hnpfjngllnobngcgfapefoaidbinmjnm"
+spawn-sh-at-startup "sleep 3 && /opt/brave-bin/brave --app-id=hnpfjngllnobngcgfapefoaidbinmjnm"
+
+spawn-at-startup "niri" "msg" "action" "focus-workspace" "web"
 

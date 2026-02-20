@@ -12,19 +12,65 @@
       "text": "adicionar função de qlat no launcher (fazer ou achar um plugin pronto)",
       "completed": false,
       "createdAt": "2026-02-01T17:04:26.171Z",
-      "pageId": 0
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
     },
     {
       "id": 1769964389049,
       "text": "Customize Boot",
       "completed": false,
       "createdAt": "2026-02-01T16:46:29.049Z",
-      "pageId": 0
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
     }
   ],
   "count": 2,
   "completedCount": 0,
   "isExpanded": false,
   "showCompleted": true,
-  "showBackground": true
+  "showBackground": true,
+  "useCustomColors": false,
+  "priorityColors": {
+    "high": {
+      "r": 1,
+      "g": 0.7058823704719543,
+      "b": 0.6705882549285889,
+      "a": 1,
+      "hsvHue": 0.01786111108958721,
+      "hsvSaturation": 0.3294117748737335,
+      "hsvValue": 1,
+      "hslHue": 0.01786111108958721,
+      "hslSaturation": 1,
+      "hslLightness": 0.8352941274642944,
+      "valid": true
+    },
+    "medium": {
+      "r": 1,
+      "g": 0.7215686440467834,
+      "b": 0.45490196347236633,
+      "a": 1,
+      "hsvHue": 0.08152777701616287,
+      "hsvSaturation": 0.545098066329956,
+      "hsvValue": 1,
+      "hslHue": 0.08152777701616287,
+      "hslSaturation": 1,
+      "hslLightness": 0.7274585962295532,
+      "valid": true
+    },
+    "low": {
+      "r": 0.7764706015586853,
+      "g": 0.7764706015586853,
+      "b": 0.7764706015586853,
+      "a": 1,
+      "hsvHue": -1,
+      "hsvSaturation": 0,
+      "hsvValue": 0.7764706015586853,
+      "hslHue": -1,
+      "hslSaturation": 0,
+      "hslLightness": 0.7764706015586853,
+      "valid": true
+    }
+  }
 }
