@@ -23,8 +23,15 @@ window-rule {
 
 window-rule {
   match app-id="steam" title="Friends List"
-  open-on-workspace "gaming"
   default-column-width { proportion 0.25; }
+}
+
+window-rule {
+  match app-id="steam" title="Steam Settings"
+  match app-id="steam" title="Add Non-Steam Game"
+  open-floating true
+  default-column-width { proportion 0.5; }
+  default-window-height { proportion 0.7; }
 }
 
 window-rule {
