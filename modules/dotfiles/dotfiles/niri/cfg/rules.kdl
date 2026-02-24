@@ -22,6 +22,12 @@ window-rule {
 }
 
 window-rule {
+    match app-id="heroic"
+    open-on-workspace "gaming"
+    default-column-width { proportion 0.5; }
+}
+
+window-rule {
   match app-id="steam" title="Friends List"
   default-column-width { proportion 0.25; }
 }

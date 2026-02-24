@@ -1,5 +1,6 @@
 # Path
-export PATH=$PATH:$HOME/bin:$HOME/.local/bin
+export PATH="$PATH:$HOME/bin:$HOME/.local/bin"
+export PATH="$PATH:$HOME/go/bin"
 
 # NVM
 export NVM_DIR="$HOME/.config/nvm"

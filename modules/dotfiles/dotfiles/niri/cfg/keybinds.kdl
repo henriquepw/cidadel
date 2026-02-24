@@ -76,9 +76,10 @@ binds {
 
     // ─── Layout Controls ───
     Mod+CTRL+F                          { switch-preset-column-width; }
-    Mod+CTRL+H                          { set-column-width "50%"; }
-    Mod+CTRL+J                          { set-column-width "75%"; }
-    Mod+CTRL+K                          { set-column-width "100%"; }
+    Mod+CTRL+H                          { set-column-width "25%"; }
+    Mod+CTRL+J                          { set-column-width "50%"; }
+    Mod+CTRL+K                          { set-column-width "75%"; }
+    Mod+CTRL+L                          { set-column-width "100%"; }
 
     Mod+M                               { fullscreen-window; }
     Mod+O                               repeat=false { toggle-overview; }
