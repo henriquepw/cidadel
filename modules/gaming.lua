@@ -6,6 +6,7 @@ local packages = {
 	"protonplus",
 	"sunshine",
 	"discord",
+	"noisetorch",
 	"flatpak:im.riot.Riot",
 }
 
