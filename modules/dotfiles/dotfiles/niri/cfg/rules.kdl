@@ -35,6 +35,7 @@ window-rule {
 window-rule {
   match app-id="steam" title="Steam Settings"
   match app-id="steam" title="Add Non-Steam Game"
+  match app-id="steam" is-active=true
   open-floating true
   default-column-width { proportion 0.5; }
   default-window-height { proportion 0.7; }
