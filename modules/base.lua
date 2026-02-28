@@ -11,6 +11,7 @@ local packages = {
 	"starship",
 	"localsend",
 	"wl-clipboard",
+	"helium-browser-bin",
 }
 
 return {

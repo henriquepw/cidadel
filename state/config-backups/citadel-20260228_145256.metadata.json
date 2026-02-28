@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-02-28T14:52:56.611844953+00:00",
+  "timestamp_display": "2026-02-28 14:52",
+  "hostname": "citadel",
+  "active_host_file": "citadel.yaml",
+  "enabled_modules": [
+    "cachyos-repo",
+    "system-packages-citadel",
+    "base",
+    "dotfiles",
+    "development",
+    "gaming",
+    "tailscale",
+    "login-managers/sddm-astronaut"
+  ],
+  "backup_type": "auto-sync",
+  "dcli_version": "0.2.0",
+  "package_count": 202,
+  "validation_passed": true
+}
