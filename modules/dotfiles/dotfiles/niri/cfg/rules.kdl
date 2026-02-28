@@ -48,7 +48,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="brave-cinhimbnkkaeohfgghhklpknlkffjgod-Default" // Youtube Music Webapp
+    match app-id="chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default" // Youtube Music Webapp
     open-on-workspace "scratch"
     open-floating true
     default-column-width { proportion 0.5; }
@@ -57,7 +57,8 @@ window-rule {
 
 window-rule {
     match app-id="discord"
-    match app-id="brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default" // Whatsapp Webapp
+    match app-id="im.riot.Riot"
+    match app-id="chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default" // Whatsapp Webapp
     open-on-workspace "chat"
     default-column-width { proportion 0.5; }
 }

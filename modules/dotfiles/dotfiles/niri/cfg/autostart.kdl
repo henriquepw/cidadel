@@ -4,16 +4,16 @@
 spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
 spawn-at-startup "qs" "-c" "noctalia-shell"
 
-spawn-at-startup "brave"
+spawn-at-startup "helium-browser"
 spawn-at-startup "ghostty"
-// spawn-at-startup "discord"
+spawn-at-startup "im.riot.Riot"
 spawn-at-startup "steam"
 
 // Youtube Music
-spawn-sh-at-startup "sleep 1 && /opt/brave-bin/brave --app-id=cinhimbnkkaeohfgghhklpknlkffjgod"
+spawn-sh-at-startup "helium-browser --app-id=cinhimbnkkaeohfgghhklpknlkffjgod"
 
 // Whatsapp Webapp
-spawn-sh-at-startup "sleep 3 && /opt/brave-bin/brave --app-id=hnpfjngllnobngcgfapefoaidbinmjnm"
+spawn-sh-at-startup "helium-browser --app-id=hnpfjngllnobngcgfapefoaidbinmjnm"
+
 
 spawn-at-startup "niri" "msg" "action" "focus-workspace" "web"
-
