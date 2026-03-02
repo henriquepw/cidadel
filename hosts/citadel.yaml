@@ -1,31 +1,25 @@
 host: citadel
 description: Desktop
-
 import: []
-
 enabled_modules:
-- cachyos-repo
-- system-packages-citadel
-- base
-- dotfiles
-- development
-- gaming
-- tailscale
-- login-managers/sddm-astronaut
-
+  - cachyos-repo
+  - system-packages-citadel
+  - base
+  - dotfiles
+  - development
+  - gaming
+  - tailscale
+  - login-managers/sddm-astronaut
 packages: []
 exclude: []
 additional_packages: []
-
 flatpak_scope: user
 auto_prune: false
 module_processing: parallel
 strict_package_order: false
-
 config_backups:
   enabled: true
   max_backups: 3
-
 system_backups:
   enabled: true
   backup_on_sync: true
@@ -33,22 +27,20 @@ system_backups:
   tool: snapper
   snapper_config: root
   max_backups: 3
-
 services:
   enabled:
-  - NetworkManager
-  - NetworkManager-dispatcher
-  - NetworkManager-wait-online
-  - ananicy-cpp
-  - avahi-daemon
-  - bluetooth
-  - getty@
-  - greetd
-  - limine-snapper-sync
-  - ufw
+    - NetworkManager
+    - NetworkManager-dispatcher
+    - NetworkManager-wait-online
+    - ananicy-cpp
+    - avahi-daemon
+    - bluetooth
+    - getty@
+    - greetd
+    - limine-snapper-sync
+    - ufw
   disabled: []
   scope: system
-
 enabled_service_profiles: []
 update_hooks:
   pre_update: null
@@ -56,18 +48,16 @@ update_hooks:
   behavior: ask
   devel: false
   run_as_user: false
-
 default_apps:
   scope: system
-  browser: brave-browser
+  browser: helium
   text_editor: nvim
   file_manager: org.gnome.Nautilus
   terminal: com.mitchellh.ghostty
-  video_player: null
-  audio_player: null
-  image_viewer: brave-browser
-  pdf_viewer: brave-browser
+  video_player: mpv
+  audio_player: mpv
+  image_viewer: helium
+  pdf_viewer: helium
   mime_types: {}
-
 editor: nvim
 aur_helper: paru

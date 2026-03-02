@@ -1,10 +1,12 @@
-last_updated: 2026-02-28T15:29:27.821992484Z
+last_updated: 2026-03-02T22:59:52.714791217Z
 scope: system
 apps:
-  pdf_viewer: brave-browser
-  text_editor: nvim
-  terminal: com.mitchellh.ghostty
+  video_player: mpv
   file_manager: org.gnome.Nautilus
-  browser: brave-browser
-  image_viewer: brave-browser
+  text_editor: nvim
+  browser: helium
+  terminal: com.mitchellh.ghostty
+  audio_player: mpv
+  pdf_viewer: helium
+  image_viewer: helium
 custom_mime_types: {}

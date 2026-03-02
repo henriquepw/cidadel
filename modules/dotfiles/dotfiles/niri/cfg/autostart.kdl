@@ -9,6 +9,8 @@ spawn-at-startup "ghostty"
 spawn-at-startup "im.riot.Riot"
 spawn-at-startup "steam"
 
+spawn-sh-at-startup "alacritty --class btop -e btop"
+
 // Youtube Music
 spawn-sh-at-startup "helium-browser --app-id=cinhimbnkkaeohfgghhklpknlkffjgod"
 

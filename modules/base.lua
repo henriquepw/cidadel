@@ -12,6 +12,7 @@ local packages = {
 	"localsend",
 	"wl-clipboard",
 	"helium-browser-bin",
+	"bitwarden",
 }
 
 return {

@@ -17,6 +17,7 @@ local packages = {
 	"lazygit",
 	"lazydocker",
 	"ghostty",
+	"alacritty",
 	"zsh",
 	"neovim",
 }

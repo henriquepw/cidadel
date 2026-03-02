@@ -15,7 +15,6 @@ packages:
   - bluez-libs
   - bluez-obex
   - bluez-utils
-  - brave-bin
   - btrfs-assistant
   - btrfs-progs
   - cantarell-fonts
@@ -45,7 +44,6 @@ packages:
   - fcitx5-gtk
   - fcitx5-mozc
   - ffmpegthumbnailer
-  - fluxer-git
   - fsarchiver
   - glances
   - greetd
@@ -143,7 +141,6 @@ packages:
   - rsync
   - s-nail
   - sddm
-  - seanime-denshi
   - sg3_utils
   - smartmontools
   - snapper
