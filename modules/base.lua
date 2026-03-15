@@ -11,8 +11,11 @@ local packages = {
 	"starship",
 	"localsend",
 	"wl-clipboard",
-	"helium-browser-bin",
+	"brave-bin",
+	"librewolf-bin",
 	"bitwarden",
+	"logseq-desktop",
+	"kdeconnect",
 }
 
 return {
