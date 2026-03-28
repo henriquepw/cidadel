@@ -1,8 +1,3 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
---
-
 local map = vim.keymap.set
 
 local function add_word_to_lang(lang)
@@ -36,15 +31,5 @@ local function add_word_to_lang(lang)
 end
 
 map("n", "<leader>z", "", { desc = "Spelling" })
-
-map("n", "<leader>zp", function()
-  add_word_to_lang("pt_br")
-end, {
-  desc = "Add word to Portuguese",
-})
-
-map("n", "<leader>ze", function()
-  add_word_to_lang("en_us")
-end, {
-  desc = "Add word to English",
-})
+map("n", "<leader>zp", function() add_word_to_lang("pt_br") end, { desc = "Add word to Portuguese" })
+map("n", "<leader>ze", function() add_word_to_lang("en_us") end, { desc = "Add word to English" })
