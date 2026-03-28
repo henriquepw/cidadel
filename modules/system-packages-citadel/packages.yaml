@@ -165,7 +165,6 @@ packages:
   - wireless-regdb
   - wireplumber
   - wpa_supplicant
-  - wtype
   - xdg-user-dirs
   - xf86-video-amdgpu
   - xfsprogs

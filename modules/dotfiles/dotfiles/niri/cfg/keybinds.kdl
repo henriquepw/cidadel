@@ -89,10 +89,4 @@ binds {
     Mod+CTRL+Shift+Q                        { screenshot; }
     Mod+CTRL+Shift+W                        { screenshot-screen; }
     Mod+CTRL+Shift+E                        { screenshot-window; }
-
-    // ─── Universal Super ───
-    Mod+A { spawn "wtype" "-M" "ctrl" "a" "-m" "ctrl"; }
-    Mod+X { spawn "wtype" "-M" "ctrl" "x" "-m" "ctrl"; }
-    Mod+C { spawn "wtype" "-M" "ctrl" "-k" "Insert" "-m" "ctrl"; }
-    Mod+V { spawn "wtype" "-M" "shift" "-k" "Insert" "-m" "shift"; }
 }

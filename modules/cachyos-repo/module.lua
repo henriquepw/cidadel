@@ -16,8 +16,6 @@ return {
 		"cachyos-v3-mirrorlist",
 		"cachyos-v4-mirrorlist",
 		"cachyos-zsh-config",
-		"linux-cachyos-lts",
-		"linux-cachyos-lts-headers",
 	},
 	metadata = {
 		category = "system",

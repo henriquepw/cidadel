@@ -1,12 +1,12 @@
-last_updated: 2026-03-15T23:30:41.662776212Z
+last_updated: 2026-03-28T15:50:05.909275303Z
 scope: system
 apps:
   pdf_viewer: helium
-  text_editor: nvim
   image_viewer: helium
-  browser: helium
+  text_editor: nvim
+  audio_player: mpv
   file_manager: org.gnome.Nautilus
   video_player: mpv
+  browser: helium
   terminal: com.mitchellh.ghostty
-  audio_player: mpv
 custom_mime_types: {}

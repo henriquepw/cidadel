@@ -19,7 +19,10 @@ local packages = {
 	"ghostty",
 	"alacritty",
 	"zsh",
-	"neovim",
+	"neovim-git",
+  "gc",
+  "tree-sitter-cli-git",
+  "rustup",
 }
 
 return {
