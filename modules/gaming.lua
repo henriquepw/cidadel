@@ -7,7 +7,6 @@ local packages = {
 	"sunshine",
 	"discord",
 	"noisetorch",
-	"flatpak:im.riot.Riot",
 }
 
 return {

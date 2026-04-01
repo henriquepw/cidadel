@@ -16,6 +16,7 @@ local packages = {
 	"bitwarden",
 	"logseq-desktop",
 	"kdeconnect",
+	"obsidian",
 }
 
 return {
