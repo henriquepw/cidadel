@@ -1,11 +1,4 @@
 {
-  "pages": [
-    {
-      "id": 0,
-      "name": "General"
-    }
-  ],
-  "current_page_id": 0,
   "todos": [
     {
       "id": 1769965466171,
@@ -26,11 +19,18 @@
       "details": ""
     }
   ],
+  "pages": [
+    {
+      "id": 0,
+      "name": "General"
+    }
+  ],
+  "current_page_id": 0,
   "count": 2,
   "completedCount": 0,
-  "isExpanded": false,
   "showCompleted": true,
   "showBackground": true,
+  "isExpanded": false,
   "useCustomColors": false,
   "priorityColors": {
     "high": {
